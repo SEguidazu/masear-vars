@@ -1,0 +1,4 @@
+div#container > svg path:hover {
+  fill: orange;
+  cursor: pointer;
+}
