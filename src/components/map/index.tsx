@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from "react";
-import { ArgetinaMapSVG } from "@/assets/map";
+import { useEffect, useState } from "react";
 import './styles.css'
+
+import { ArgetinaMapSVG } from "@/assets/map";
 import { getRefineProvince } from "@/lib/utils";
 
 function Map() {
@@ -31,7 +32,7 @@ function Map() {
   }
 
   return (
-    <div id="container">
+    <div id="map-container" className="p-2 border-2 border-black">
       <ArgetinaMapSVG />
     </div>
   );

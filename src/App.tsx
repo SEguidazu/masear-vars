@@ -1,9 +1,8 @@
 import Map from "@/components/map";
-import "./App.css";
 
 function App() {
   return (
-    <main className="container">
+    <main>
       <Map />
     </main>
   );

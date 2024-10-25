@@ -1,4 +1,9 @@
-export const ArgetinaMapSVG = () => (
+import { cn } from "@/lib/utils";
+
+interface ArgetinaMapSVGProps {
+	className: string | undefined;
+}
+export const ArgetinaMapSVG = ({ className }: ArgetinaMapSVGProps) => (
 	<svg
 		version="1.1"
 		id="Layer_1"
@@ -7,6 +12,7 @@ export const ArgetinaMapSVG = () => (
 		viewBox="0 0 254.5 536.166"
 		enableBackground="new 0 0 254.5 536.166"
 		xmlSpace="preserve"
+		className={cn("max-h-svh w-full h-full", className)}
 	>
 		<g id="Layer_2">
 			<circle
@@ -69,7 +75,13 @@ export const ArgetinaMapSVG = () => (
 		c-0.438-0.729-1.547-1.121-1.801-1.889c-0.14-0.406-0.466-0.896-0.232-1.282c0.361-0.6,0.539-0.735,0.373-1.4
 		c-0.137-0.551,0.357-0.479,0.563-0.935c0.15-0.332,0-1.061,0-1.429c0-0.193,1.021-0.565,1.217-0.663
 		c0.154-0.075-0.201-1.188-0.242-1.363c-0.143-0.648-0.09-0.582-0.743-0.45C172.779,203.63,172.109,203.819,171.434,203.672"
-			></path>
+			>
+				<g className="tooltip css" transform="translate(50,50)">
+					<rect x="-3em" y="-45" width="6em" height="1.25em" />
+					<text y="-45" dy="1em" text-anchor="middle" fill="red">
+						SVG/CSS Tip</text>
+				</g>
+			</path>
 			<path
 				id="AR-F"
 				fill="#0072bb"
