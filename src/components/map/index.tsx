@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
 
+import Dialog from "@/components/custom/dialog";
 import { ArgetinaMapSVG } from "@/assets/map";
-import { getRefineProvince } from "@/lib/utils";
-
-import varsJudicial from "@/data/masear-vars-judicial.json";
 
 function Map() {
+  const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [provinces, setProvinces] = useState<NodeListOf<SVGPathElement> | null>(
     null
   );
+  const [provinceSelected, setProvinceSelected] = useState<string>("");
 
   useEffect(() => {
     const provinces = document.querySelectorAll("path");
@@ -31,13 +31,8 @@ function Map() {
   }, [provinces]);
 
   const handleProvinceClick = (ev: MouseEvent) => {
-    console.log({ evId: ev.target?.id });
-    console.log(getRefineProvince(ev.target?.id));
-    console.log({ varsJudicial });
-    varsJudicial.forEach((province) => {
-      console.log(province);
-      console.log(Object.entries(province));
-    });
+    setProvinceSelected(ev.target?.id);
+    setOpenDialog(true)
   };
 
   return (
@@ -46,10 +41,9 @@ function Map() {
       className="grid grid-cols-2 p-2 border-2 border-black"
     >
       <ArgetinaMapSVG />
-      <dialog>
-        <h2>Hello world</h2>
-        <p>This is a dialog</p>
+      <Dialog open={openDialog} provinceCode={provinceSelected} />
 
+      <dialog>
         {/* <ul>
           <li>Mayoría requerida para ser electo en primera vuelta </li>
           <li>Ballotage</li>

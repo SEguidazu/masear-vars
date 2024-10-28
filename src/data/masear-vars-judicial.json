@@ -1,5 +1,6 @@
 [
   {
+    "code": "AR-ARG",
     "Provincia": "Argentina",
     "Mayoría requerida para ser electo en primera vuelta": "Otra",
     "Ballotage": "SI",
@@ -21,6 +22,7 @@
     "Links/Fuentes": ""
   },
   {
+    "code": "AR-B",
     "Provincia": "Buenos Aires",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -42,6 +44,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1onhJWk2DWL4bgpiGo2RTQs5kNODwTpvFmLcn_Z-7iKU/edit?usp=sharing"
   },
   {
+    "code": "AR-C",
     "Provincia": "CABA",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría absoluta",
     "Ballotage": "SI",
@@ -63,6 +66,7 @@
     "Links/Fuentes": "https://docs.google.com/spreadsheets/d/1Ma-R-7CpzTbiGMWqDT8OGt2t44LZvnqE0P-o-nkMIVU/edit?usp=sharing"
   },
   {
+    "code": "AR-K",
     "Provincia": "Catamarca",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -84,6 +88,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1rkDBo9AOPyIR_53k3UW8TtQMOygWGBlOc4TM8adkeP0/edit?usp=sharing"
   },
   {
+    "code": "AR-H",
     "Provincia": "Chaco",
     "Mayoría requerida para ser electo en primera vuelta": "Otra",
     "Ballotage": "SI",
@@ -105,6 +110,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1s4Ti2ZXcQQP74ONKDXsgJcDkF_DiKlK3rXk8kTP1oio/edit?usp=sharing"
   },
   {
+    "code": "AR-U",
     "Provincia": "Chubut",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "SI",
@@ -126,6 +132,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1Tv5h_MOBgP3T7-62c6gucEqyxi6jiFuJIeH6aP1_X9I/edit?usp=sharing"
   },
   {
+    "code": "AR-X",
     "Provincia": "Córdoba",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -147,6 +154,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1oDZxaLqxafjxCb7eXH7hrpB450nnqtmBCDAG2_htmw0/edit?usp=sharing"
   },
   {
+    "code": "AR-W",
     "Provincia": "Corrientes",
     "Mayoría requerida para ser electo en primera vuelta": "Otra",
     "Ballotage": "SI",
@@ -168,6 +176,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1-BzXWZO7aAQKw9PBJzsurjUKaGsO5pY34JsiXDCEx4E/edit?usp=sharing"
   },
   {
+    "code": "AR-E",
     "Provincia": "Entre Ríos",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -189,6 +198,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1u6gTO6sifEmISBJEvxUprpPwx-tVfiLxHihJLIwAUUc/edit?usp=sharing"
   },
   {
+    "code": "AR-P",
     "Provincia": "Formosa",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -210,6 +220,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1m9fUkE3AwMciWjjHb6Mu7IoYfWGsHlCl/edit?usp=sharing&ouid=113314351280623979806&rtpof=true&sd=true"
   },
   {
+    "code": "AR-Y",
     "Provincia": "Jujuy",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -231,6 +242,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1QJxSGnFbTjACuOHPEPaVqsiwICp5sgG3hweQw3he1TY/edit?usp=sharing"
   },
   {
+    "code": "AR-L",
     "Provincia": "La Pampa",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -252,6 +264,7 @@
     "Links/Fuentes": "https://docs.google.com/spreadsheets/d/13IVI86c20Npi9GVTuAnu2jAn7QakBc_z9ei1vOYTsKs/edit?usp=sharing"
   },
   {
+    "code": "AR-F",
     "Provincia": "La Rioja",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -273,6 +286,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1CJmYB9vfedxymdIBfw3MWwQkawq4axdGWxPAeQpg0FE/edit"
   },
   {
+    "code": "AR-M",
     "Provincia": "Mendoza",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -294,6 +308,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1H1Kqxucaux7KIBoHgkpJP7j_gtyRhthcFscBo2frdLc/edit?usp=sharing"
   },
   {
+    "code": "AR-N",
     "Provincia": "Misiones",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -315,6 +330,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1zr-THVN7-o3mKqjsRGp_9-hZ0sEh11YmR86Hv7K1joU/edit?usp=sharing"
   },
   {
+    "code": "AR-Q",
     "Provincia": "Neuquén",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -336,6 +352,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/14Nf03hJPxVfqGLXvnud2wDrqzmuJkrEfOSHJaUvg5U4/edit?usp=sharing"
   },
   {
+    "code": "AR-R",
     "Provincia": "Río Negro",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -357,6 +374,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/109E4Xlm8vhpwGoghSEG7HtQaxViJhZ0s3b1MIBIY_Mo/edit?usp=sharing"
   },
   {
+    "code": "AR-A",
     "Provincia": "Salta",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -378,6 +396,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1Gb2lHBo3aBmqauZVFDzEX0Vh4fLm9eRf/edit?usp=sharing&ouid=113314351280623979806&rtpof=true&sd=true"
   },
   {
+    "code": "AR-J",
     "Provincia": "San Juan",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -399,6 +418,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1tpzj43hINR1XtDSO-MmcNKN1b2UnW_JAxBg5I6kjW24/edit"
   },
   {
+    "code": "AR-D",
     "Provincia": "San Luis",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "OTRO",
@@ -420,6 +440,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1OLjWXJAxGUrZ_i1iH8LEf7Jd-4JQM2UsZXkB7Jd-JuI/edit?usp=sharing"
   },
   {
+    "code": "AR-Z",
     "Provincia": "Santa Cruz",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -441,6 +462,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1SZndg6lHaI5SS9u37piaacjGyryBAbaPAl5hye8wJ9c/edit"
   },
   {
+    "code": "AR-S",
     "Provincia": "Santa Fe",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría absoluta",
     "Ballotage": "SI",
@@ -462,6 +484,7 @@
     "Links/Fuentes": ""
   },
   {
+    "code": "AR-G",
     "Provincia": "Santiago del Estero",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",
@@ -483,7 +506,8 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1ukw62aYRIKUKAHenvk-2yZePdVmdldAL/edit?usp=sharing&ouid=113314351280623979806&rtpof=true&sd=true"
   },
   {
-    "Provincia": "Tierra del Fuego AIAS",
+    "code": "AR-V",
+    "Provincia": "Tierra del Fuego",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría absoluta",
     "Ballotage": "SI",
     "Elecciones Primarias": "No contempla",
@@ -504,6 +528,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1v6ayrx69tSBBiknfmFVEVelqaYoIIXBM6Byg0M03N98/edit?usp=sharing"
   },
   {
+    "code": "AR-T",
     "Provincia": "Tucumán",
     "Mayoría requerida para ser electo en primera vuelta": "Mayoría simple",
     "Ballotage": "NO",

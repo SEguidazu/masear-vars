@@ -1,5 +1,6 @@
 [
   {
+    "code": "AR-ARG",
     "Provincia": "Argentina",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 24,
@@ -23,6 +24,7 @@
     "Links/Fuentes": ""
   },
   {
+    "code": "AR-B",
     "Provincia": "Buenos Aires",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 8,
@@ -46,6 +48,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1onhJWk2DWL4bgpiGo2RTQs5kNODwTpvFmLcn_Z-7iKU/edit?usp=sharing"
   },
   {
+    "code": "AR-C",
     "Provincia": "CABA",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -69,6 +72,7 @@
     "Links/Fuentes": "Fuentes CABA"
   },
   {
+    "code": "AR-K",
     "Provincia": "Catamarca",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 16,
@@ -92,6 +96,7 @@
     "Links/Fuentes": "Provincia de Catamarca"
   },
   {
+    "code": "AR-H",
     "Provincia": "Chaco",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -115,6 +120,7 @@
     "Links/Fuentes": "Provincia de Chaco"
   },
   {
+    "code": "AR-U",
     "Provincia": "Chubut",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 16,
@@ -138,6 +144,7 @@
     "Links/Fuentes": "Fuentes Provincia de Chubut"
   },
   {
+    "code": "AR-X",
     "Provincia": "Córdoba",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 27,
@@ -161,6 +168,7 @@
     "Links/Fuentes": "Córdoba"
   },
   {
+    "code": "AR-W",
     "Provincia": "Corrientes",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 1,
@@ -184,6 +192,7 @@
     "Links/Fuentes": "Provincia de Corrientes"
   },
   {
+    "code": "AR-E",
     "Provincia": "Entre Ríos",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 17,
@@ -207,6 +216,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1u6gTO6sifEmISBJEvxUprpPwx-tVfiLxHihJLIwAUUc/edit?usp=sharing"
   },
   {
+    "code": "AR-P",
     "Provincia": "Formosa",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -230,6 +240,7 @@
     "Links/Fuentes": "FORMOSA.docx"
   },
   {
+    "code": "AR-Y",
     "Provincia": "Jujuy",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -253,6 +264,7 @@
     "Links/Fuentes": "Jujuy MaSEAr"
   },
   {
+    "code": "AR-L",
     "Provincia": "La Pampa",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -276,6 +288,7 @@
     "Links/Fuentes": "Fuentes La Pampa"
   },
   {
+    "code": "AR-F",
     "Provincia": "La Rioja",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 18,
@@ -299,6 +312,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1TEXmfQ1Q0hvY4YeMrfeU7u9jCqisSxCaNbM5H4hetrk/edit"
   },
   {
+    "code": "AR-M",
     "Provincia": "Mendoza",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 4,
@@ -322,6 +336,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/15tGuQiuKX-_xRqNOsqkMntD2dR-wpk1fJNBt6Xn66TU/edit?usp=sharing"
   },
   {
+    "code": "AR-N",
     "Provincia": "Misiones",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -345,6 +360,7 @@
     "Links/Fuentes": "Fuente Misiones"
   },
   {
+    "code": "AR-Q",
     "Provincia": "Neuquén",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -368,6 +384,7 @@
     "Links/Fuentes": "Neuquén"
   },
   {
+    "code": "AR-R",
     "Provincia": "Río Negro",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -391,6 +408,7 @@
     "Links/Fuentes": "Río Negro"
   },
   {
+    "code": "AR-A",
     "Provincia": "Salta",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 23,
@@ -414,6 +432,7 @@
     "Links/Fuentes": "SALTA.docx"
   },
   {
+    "code": "AR-J",
     "Provincia": "San Juan",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 19,
@@ -437,6 +456,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1h61ten7oJMaiwCkXpL9uRn9WsAp-wDBVtzpHvjY2mkc/edit"
   },
   {
+    "code": "AR-D",
     "Provincia": "San Luis",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 9,
@@ -460,6 +480,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1XvQylKGxeNy51Nvn3GDr5SVE8e7_8YDHMcC4xptTUOE/edit?usp=sharing"
   },
   {
+    "code": "AR-Z",
     "Provincia": "Santa Cruz",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 15,
@@ -483,6 +504,7 @@
     "Links/Fuentes": "https://docs.google.com/document/d/1SZndg6lHaI5SS9u37piaacjGyryBAbaPAl5hye8wJ9c/edit"
   },
   {
+    "code": "AR-S",
     "Provincia": "Santa Fe",
     "Sistema legislativo": "Bicameral",
     "Cantidad de distritos": 19,
@@ -506,6 +528,7 @@
     "Links/Fuentes": "Santa Fe"
   },
   {
+    "code": "AR-G",
     "Provincia": "Santiago del Estero",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
@@ -529,7 +552,8 @@
     "Links/Fuentes": "Santiago del Estero.docx"
   },
   {
-    "Provincia": "Tierra del Fuego AIAS",
+    "code": "AR-V",
+    "Provincia": "Tierra del Fuego",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 1,
     "Magnitud de los distritos\nDiputados": "Plurinominales",
@@ -552,6 +576,7 @@
     "Links/Fuentes": "Fuentes TdF"
   },
   {
+    "code": "AR-T",
     "Provincia": "Tucumán",
     "Sistema legislativo": "Unicameral",
     "Cantidad de distritos": 3,
