@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import "./styles.css";
 
 import Dialog from "@/components/custom/dialog";
 import { ArgetinaMapSVG } from "@/assets/map";
+
+import "./styles.css";
 
 function Map() {
   const [openDialog, setOpenDialog] = useState<boolean>(false);
@@ -31,65 +32,19 @@ function Map() {
   }, [provinces]);
 
   const handleProvinceClick = (ev: MouseEvent) => {
-    setProvinceSelected(ev.target?.id);
+    setProvinceSelected((ev.target as SVGPathElement).getAttribute("name") || "");
     setOpenDialog(true)
   };
+
+  const closeDialog = () => setOpenDialog(false);
 
   return (
     <div
       id="map-container"
-      className="grid grid-cols-2 p-2 border-2 border-black"
+      className="max-h-screen flex justify-center items-center p-2 border-2 border-black"
     >
-      <ArgetinaMapSVG />
-      <Dialog open={openDialog} provinceCode={provinceSelected} />
-
-      <dialog>
-        {/* <ul>
-          <li>Mayoría requerida para ser electo en primera vuelta </li>
-          <li>Ballotage</li>
-          <li>Elecciones Primarias </li>
-          <li>Reelección</li>
-          <li>Cantidad de reelecciones permitidas </li>
-          <li>Concurrencia con elecciones nacionales </li>
-          <li>Doble voto simultáneo y acumulativo (Ley de lemas) </li>
-          <li>
-            Indice de alternancia (Cantidad de gobernadores/presidentes electos)
-          </li>
-          <li>Forma de voto</li>
-          <li>Tipo de boleta</li>
-          <li>Promedio de participación electoral </li>
-          <li>Forma de elección de la CSJN</li>
-          <li>Cantidad de partidos inscriptos en condiciones de presentarse</li>
-          <li>Ficha Limpia</li>
-          <li>Cuotas de Género</li>
-          <li>Otros Cupos</li>
-          <li>Observaciones</li>
-          <li>Links/Fuentes</li>
-        </ul>
-
-        <ul>
-          <li>Sistema legislativo</li>
-          <li>Cantidad de distritos</li>
-          <li>Magnitud de los distritos - Diputados</li>
-          <li>Cantidad de representantes - Diputados</li>
-          <li>Forma de recambio - Diputados</li>
-          <li>Duración del mandato - Diputados</li>
-          <li>Formula electoral - Diputados</li>
-          <li>Magnitud de los distritos - Senadores</li>
-          <li>Cantidad de representantes - Senadores</li>
-          <li>Forma de recambio - Senado</li>
-          <li>Duración del mandato - Senadores</li>
-          <li>Formula electoral - Senadores</li>
-          <li>Concurrencia elecciones provinciales/nacionales</li>
-          <li>Umbral de exclusión elecciones generales</li>
-          <li>Doble voto simultáneo y acumulativo (Ley de lemas)</li>
-          <li>Ficha Limpia</li>
-          <li>Cuotas de Género</li>
-          <li>Otros Cupos</li>
-          <li>Observaciones</li>
-          <li>Links/Fuentes</li>
-        </ul> */}
-      </dialog>
+      <ArgetinaMapSVG className="w-72 h-full" />
+      <Dialog open={openDialog} closeDialog={closeDialog} provinceCode={provinceSelected} />
     </div>
   );
 }
