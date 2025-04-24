@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
+import MapContext from "@/data/context";
 
 import Dialog from "@/components/custom/dialog";
 import { ArgetinaMapSVG } from "@/assets/map";
@@ -11,11 +12,15 @@ function Map() {
     null
   );
   const [provinceSelected, setProvinceSelected] = useState<string>("");
+  const { legislativo, ejecutivo, isLoading } = useContext(MapContext);
 
   useEffect(() => {
-    const provinces = document.querySelectorAll("path");
-    setProvinces(provinces);
-  }, []);
+    if (!isLoading) {
+      const provinces = document.querySelectorAll("path");
+      console.log({ provinces });
+      setProvinces(provinces);
+    }
+  }, [isLoading]);
 
   useEffect(() => {
     if (provinces) {
@@ -31,20 +36,41 @@ function Map() {
     };
   }, [provinces]);
 
+  const getLegislativo = useMemo(() => {
+    return legislativo.find((item) => item.Provincia === provinceSelected);
+  }, [legislativo, provinceSelected]);
+
+  const getEjecutivo = useMemo(() => {
+    return ejecutivo.find((item) => item.Provincia === provinceSelected);
+  }, [ejecutivo, provinceSelected]);
+
   const handleProvinceClick = (ev: MouseEvent) => {
-    setProvinceSelected((ev.target as SVGPathElement).getAttribute("name") || "");
-    setOpenDialog(true)
+    setProvinceSelected(
+      (ev.target as SVGPathElement).getAttribute("name") || ""
+    );
+    setOpenDialog(true);
   };
 
   const closeDialog = () => setOpenDialog(false);
 
+  console.log({ provinceSelected, getLegislativo, getEjecutivo });
+
+  if (isLoading)
+    return <div className="text-center animate-pulse">Cargando...</div>;
+
   return (
     <div
       id="map-container"
-      className="max-h-screen flex justify-center items-center p-2 border-2 border-black"
+      className="max-h-screen grid grid-cols-2 grid-rows-1 gap-x-2 justify-items-center p-2 border-2 border-black"
     >
       <ArgetinaMapSVG className="w-72 h-full" />
-      <Dialog open={openDialog} closeDialog={closeDialog} provinceCode={provinceSelected} />
+      <Dialog
+        open={openDialog}
+        closeDialog={closeDialog}
+        provinceCode={provinceSelected}
+        legislativo={getLegislativo || {}}
+        ejecutivo={getEjecutivo || {}}
+      />
     </div>
   );
 }

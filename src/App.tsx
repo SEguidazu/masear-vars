@@ -4,17 +4,22 @@ import MapContext, { ContextProps, initialContext } from "@/data/context";
 import Map from "@/components/map";
 
 function App() {
-  const [mapData, setMapData] = useState<ContextProps>(initialContext)
+  const [mapData, setMapData] = useState<ContextProps>(initialContext);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetchMapData();
+      try {
+        setMapData((prev) => ({ ...prev, isLoading: true }));
+        const response = await fetchMapData();
 
-      if (response) setMapData(response)
-    }
+        if (response) setMapData({ ...response, isLoading: false });
+      } finally {
+        setMapData((prev) => ({ ...prev, isLoading: false }));
+      }
+    };
 
     fetchData();
-  }, [])
+  }, []);
 
   return (
     <MapContext.Provider value={mapData}>
