@@ -16,9 +16,15 @@ function Map() {
 
   useEffect(() => {
     if (!isLoading) {
-      const provinces = document.querySelectorAll("path");
-      console.log({ provinces });
-      setProvinces(provinces);
+      const paths = document.querySelectorAll("path");
+
+      if (paths.length > 0) {
+        const cleanProvinces = Array.from(paths).filter(
+          (path) => path.id.length > 0 && !path.id.includes("_no_def")
+        );
+
+        setProvinces(Object(cleanProvinces));
+      }
     }
   }, [isLoading]);
 
@@ -52,8 +58,6 @@ function Map() {
   };
 
   const closeDialog = () => setOpenDialog(false);
-
-  console.log({ provinceSelected, getLegislativo, getEjecutivo });
 
   if (isLoading)
     return <div className="text-center animate-pulse">Cargando...</div>;
