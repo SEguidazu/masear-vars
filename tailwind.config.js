@@ -12,9 +12,9 @@ export default {
       colors: {
         primaryLeb: "#008a5e",
         secondaryLeb: "#10102e",
-        first: "#12a5e3",
-        second: "#94c11f",
-        third: "#9d9d9c",
+        first: "#18a0e0",
+        second: "#96c124",
+        third: "#282828",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

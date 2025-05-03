@@ -65,16 +65,23 @@ function Map() {
   return (
     <div
       id="map-container"
-      className="max-h-screen grid grid-cols-2 grid-rows-1 gap-x-2 justify-items-center p-2 border-2 border-black"
+      className="max-h-screen grid grid-cols-2 grid-rows-1 gap-x-2 justify-items-center p-2 border-2 border-black relative"
     >
       <ArgetinaMapSVG className="w-72 h-full" />
-      <Dialog
-        open={openDialog}
-        closeDialog={closeDialog}
-        provinceCode={provinceSelected}
-        legislativo={getLegislativo || {}}
-        ejecutivo={getEjecutivo || {}}
-      />
+      <div className="w-full flex flex-col items-center justify-center relative">
+        <p className="max-w-sm inline-flex flex-col items-start font-[Raleway] font-extrabold text-[12rem]/[0.9] tracking-wide antialiased opacity-50">
+          <span className="text-third">MA</span>
+          <span className="text-second">SE</span>
+          <span className="text-first">AR</span>
+        </p>
+        <Dialog
+          open={openDialog}
+          closeDialog={closeDialog}
+          provinceCode={provinceSelected}
+          legislativo={getLegislativo || {}}
+          ejecutivo={getEjecutivo || {}}
+        />
+      </div>
     </div>
   );
 }

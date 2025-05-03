@@ -1,4 +1,4 @@
 div#map-container > svg path.pointer:hover {
-  fill: #10102e;
+  fill: #95c320;
   cursor: pointer;
 }

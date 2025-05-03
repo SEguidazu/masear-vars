@@ -91,21 +91,23 @@ function Dialog({
   return (
     <dialog
       open={open}
-      className="max-w-lg w-full relative p-6 border-2 border-primaryLeb rounded-md text-black bg-white shadow-xl"
+      className="max-w-lg w-full p-6 border-2 border-first rounded-md text-black bg-white shadow-xl"
     >
       <button
         onClick={closeDialog}
         aria-label="Cerrar dialogo"
-        className="rounded-full border-primaryLeb border p-1 absolute top-2 right-2 hover:bg-primaryLeb hover:text-white transition-colors duration-200"
+        className="rounded-full border-first border p-1 absolute top-2 right-2 hover:bg-first hover:text-white transition-colors duration-200"
         title="Cerrar dialogo"
       >
         <X size={20} />
       </button>
 
-      <h2 className="font-serif font-bold text-xl mt-2 mb-1">
-        Reglamentacion de Elecciones Argentina
+      <h2 className="font-[Raleway] font-bold text-xl text-gray-500 mt-2 mb-1">
+        REGLAS ELECTORALES
       </h2>
-      <p className="text-base font-light mb-4">- {provinceCode}</p>
+      <p className="font-[Raleway] font-extrabold text-4xl/[0.9] tracking-wide text-second uppercase mb-4">
+        {provinceCode}
+      </p>
 
       <Accordion type="single" collapsible>
         <LegislativoAccordion />
