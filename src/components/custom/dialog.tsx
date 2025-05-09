@@ -108,7 +108,7 @@ function Dialog({
             variant="outline"
             onClick={() => setOptionSelected("legislativo")}
           >
-            <img src="/casa-rosada.png" alt="" className="w-20 h-20" />
+            <img src="/congreso.png" alt="" className="w-20 h-20" />
             <span className="font-[Raleway] font-bold text-xl/[1.2] text-gray-500 mt-1">
               PODER <br /> LEGISLATIVO
             </span>
@@ -118,19 +118,13 @@ function Dialog({
             variant="outline"
             onClick={() => setOptionSelected("ejecutivo")}
           >
-            <img src="/congreso.png" alt="" className="w-20 h-20" />
+            <img src="/casa-rosada.png" alt="" className="w-20 h-20" />
             <span className="font-[Raleway] font-bold text-xl/[1.2] text-gray-500 mt-1">
               PODER <br /> EJECUTIVO
             </span>
           </Button>
         </div>
       )}
-
-      {/* <Accordion type="single" collapsible>
-        <LegislativoAccordion />
-
-        <EjecutivoAccordion />
-      </Accordion> */}
     </dialog>
   );
 }
