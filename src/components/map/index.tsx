@@ -109,7 +109,7 @@ function Map() {
         </div>
         <ArgetinaMapSVG className="w-72 h-full" />
       </div>
-      <div className="col-start-1 row-start-1 w-full h-full flex flex-col md:items-center items-end md:justify-center justify-end relative">
+      <div className="col-start-1 md:col-start-2 row-start-1 w-full h-full flex flex-col md:items-center items-end md:justify-center justify-end relative">
         <p className="max-w-sm inline-flex flex-col items-start font-[Raleway] font-extrabold md:text-[12rem]/[0.9] text-[4rem]/[0.9] tracking-wide antialiased opacity-50">
           <span className="text-third">MA</span>
           <span className="text-second">SE</span>
