@@ -69,9 +69,12 @@ function Map() {
       setProvinceSelected("");
       closeDialog();
     }
-  }
+  };
 
-  const closeDialog = () => setOpenDialog(false);
+  const closeDialog = () => {
+    setOpenDialog(false);
+    setProvinceSelected("");
+  };
 
   if (isLoading)
     return <div className="text-center animate-pulse">Cargando...</div>;
@@ -79,21 +82,35 @@ function Map() {
   return (
     <div
       id="map-container"
-      className="max-h-screen grid grid-cols-2 grid-rows-1 gap-x-2 justify-items-center p-2 border-2 border-black relative"
+      className="max-h-screen grid md:grid-cols-2 grid-rows-1 gap-x-2 justify-items-center p-2 border-2 border-black relative"
     >
-      <div className="w-full flex flex-col items-center justify-center relative">
+      <div className="col-start-1 row-start-1 w-full flex flex-col items-center justify-center relative z-10">
         <div className="inline-flex items-center mb-4">
-          <button className={cn('text-first font-bold text-lg py-1 px-6 border-2 border-third rounded-s-full hover:bg-third transition-colors duration-200', provinceSelected === 'Argentina' && "bg-third")} onClick={handleButtonClick} name="Argentina">
+          <button
+            className={cn(
+              "text-first font-bold text-lg py-1 px-6 border-2 border-third rounded-s-full hover:bg-third transition-colors duration-200",
+              provinceSelected === "Argentina" && "bg-third"
+            )}
+            onClick={handleButtonClick}
+            name="Argentina"
+          >
             NACI&Oacute;N
           </button>
-          <button className={cn('text-first font-bold text-lg py-1 px-6 border-2 border-third border-s-0 rounded-e-full hover:bg-third transition-colors duration-200', provinceSelected !== 'Argentina' && "bg-third")} onClick={handleButtonClick} name="Provincia">
+          <button
+            className={cn(
+              "text-first font-bold text-lg py-1 px-6 border-2 border-third border-s-0 rounded-e-full hover:bg-third transition-colors duration-200",
+              provinceSelected !== "Argentina" && "bg-third"
+            )}
+            onClick={handleButtonClick}
+            name="Provincia"
+          >
             PROVINCIAS
           </button>
         </div>
         <ArgetinaMapSVG className="w-72 h-full" />
       </div>
-      <div className="w-full flex flex-col items-center justify-center relative">
-        <p className="max-w-sm inline-flex flex-col items-start font-[Raleway] font-extrabold text-[12rem]/[0.9] tracking-wide antialiased opacity-50">
+      <div className="col-start-1 row-start-1 w-full h-full flex flex-col md:items-center items-end md:justify-center justify-end relative">
+        <p className="max-w-sm inline-flex flex-col items-start font-[Raleway] font-extrabold md:text-[12rem]/[0.9] text-[4rem]/[0.9] tracking-wide antialiased opacity-50">
           <span className="text-third">MA</span>
           <span className="text-second">SE</span>
           <span className="text-first">AR</span>
