@@ -82,13 +82,13 @@ function Map() {
   return (
     <div
       id="map-container"
-      className="max-h-screen grid md:grid-cols-2 grid-rows-1 gap-x-2 justify-items-center p-2 border-2 border-black relative"
+      className="max-h-screen container grid md:grid-cols-2 grid-rows-1 gap-x-2 justify-items-center p-2 mx-auto relative"
     >
       <div className="col-start-1 row-start-1 w-full flex flex-col items-center justify-center relative z-10">
         <div className="inline-flex items-center mb-4">
           <button
             className={cn(
-              "text-first font-bold text-lg py-1 px-6 border-2 border-third rounded-s-full hover:bg-third transition-colors duration-200",
+              "text-first font-bold text-base sm:text-lg py-1 px-3 sm:px-6 border-2 border-third rounded-s-full rounded-e-none hover:bg-third transition-colors duration-200",
               provinceSelected === "Argentina" && "bg-third"
             )}
             onClick={handleButtonClick}
@@ -98,7 +98,7 @@ function Map() {
           </button>
           <button
             className={cn(
-              "text-first font-bold text-lg py-1 px-6 border-2 border-third border-s-0 rounded-e-full hover:bg-third transition-colors duration-200",
+              "text-first font-bold text-base sm:text-lg py-1 px-3 sm:px-6 border-2 border-third border-s-none rounded-e-full hover:bg-third transition-colors duration-200",
               provinceSelected !== "Argentina" && "bg-third"
             )}
             onClick={handleButtonClick}
@@ -107,10 +107,10 @@ function Map() {
             PROVINCIAS
           </button>
         </div>
-        <ArgetinaMapSVG className="w-72 h-full" />
+        <ArgetinaMapSVG className="max-[280px]:w-52 w-60 sm:w-72 h-full" />
       </div>
       <div className="col-start-1 md:col-start-2 row-start-1 w-full h-full flex flex-col md:items-center items-end md:justify-center justify-end relative">
-        <p className="max-w-sm inline-flex flex-col items-start font-[Raleway] font-extrabold md:text-[12rem]/[0.9] text-[4rem]/[0.9] tracking-wide antialiased opacity-50">
+        <p className="max-w-sm inline-flex flex-col items-start font-[Raleway] font-extrabold md:text-[12rem]/[0.9] sm:text-[4rem]/[0.9] text-[2.8rem]/[0.9] tracking-wide antialiased opacity-50">
           <span className="text-third">MA</span>
           <span className="text-second">SE</span>
           <span className="text-first">AR</span>
