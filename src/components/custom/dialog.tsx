@@ -28,7 +28,7 @@ function Dialog({
       if (item.Provincia) delete item.Provincia;
 
       return (
-        <ul className="max-h-80 h-full w-full inline-flex flex-col text-wrap overflow-y-scroll border-t border-gray-500 pt-3">
+        <ul className="max-h-80 min-h-80 h-full w-full inline-flex flex-col text-wrap overflow-y-scroll border-t border-gray-500 pt-3">
           {Object.entries(item).map(
             ([key, value], index) =>
               !!value && (
@@ -36,9 +36,20 @@ function Dialog({
                   <span className="text-base text-gray-500 font-bold italic block uppercase">
                     {key?.toString()}
                   </span>
-                  <span className="text-base text-gray-500 block mb-3 break-all">
-                    {value?.toString()}
-                  </span>
+                  {value.toString().includes("https") ? (
+                    <a
+                      href={value.toString()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base text-blue-500 block mb-3 break-all"
+                    >
+                      {value.toString()}
+                    </a>
+                  ) : (
+                    <span className="text-base text-gray-500 block mb-3 break-all">
+                      {value?.toString()}
+                    </span>
+                  )}
                 </li>
               )
           )}
